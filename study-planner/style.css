@@ -1,0 +1,218 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+}
+
+    body {
+        font-family:'Courier New', Courier, monospace;
+        background: linear-gradient(135deg, #66eaac 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding: 20px;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 15px;
+    
+    }
+    .header {
+        background: linear-gradient(135deg, #75ea66 0%, #764ba2 100%);
+        color: white;
+        padding: 30px;
+        text-align: center;
+    }
+    #h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    #p {
+        opacity: 0.9;
+        font-size: 15px;
+    }
+    .form-section {
+        padding: 30px;
+        background: #f8f9fa;
+        border-bottom: 2px solid #e9ecef;
+    }
+    .form-main {
+        margin-bottom: 18px;
+    }
+    .form-main label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: grey;
+    }
+    .form-main input,
+    .form-main select {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 16px;
+
+    }
+
+    .addbtn {
+        width: 100%;
+        padding: 15px;
+        background: linear-gradient(135deg, #193ddd 15%, #7ca24b 85%);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: 550;
+        cursor: pointer;
+    }
+
+    .classfilter {
+        padding: 20px 30px;
+        background: white;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        border-bottom: 2px solid #e9ecef;
+    }
+    .filter-btn {
+        padding: 10px 20px;
+        border: 2px solid #667eea;
+        background: white;
+        color: #ea66d4;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: 600;
+      
+    }
+    .filter-btn:hover,
+    .filter-btn.active {
+        background: #667eea;
+        color: white;
+    }
+    .tasksseection {
+        padding: 30px;
+        min-height: 300px;
+    }
+    .task-p {
+        background: white;
+        border: 2px solid #e0e0e0;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+   
+    }
+    .task-p.completed {
+
+        background: #f8f9fa;
+    }
+    .task-p.completed .task-m {
+        text-decoration: line-through;
+    }
+    .task-checkbox {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+    .indicator {
+        width: 8px;
+        height: 100%;
+        border-radius: 4px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .task-p {
+        position: relative;
+        padding-left: 25px;
+    }
+    .priority-high {
+        background: #dc3545;
+    }
+    .priority-medium {
+        background: #fd7e14;
+    }
+    .priority-low {
+        background: #28a745;
+    }
+    .task-m {
+        flex: 1;
+    }
+    .task-subject {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 5px;
+    }
+    .task-details {
+        display: flex;
+        gap: 15px;
+        font-size: 16px;
+        color: #666;
+        flex-wrap: wrap;
+    }
+    .task-detail-item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .priority-badge {
+        padding: 4px 12px;
+        border-radius: 15px;
+        font-weight: 600;
+        font-size: 0.85em;
+        color: white;
+    }
+    .priority-badge.high {
+        background: #dc3545;
+    }
+    .priority-badge.medium {
+        background: #fd7e14;
+    }
+    .priority-badge.low {
+        background: #28a745;
+    }
+    .task-actions {
+        display: flex;
+        gap: 10px;
+    }
+    .btn-delete {
+        padding: 10px 15px;
+        background: #dc3545;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+   
+    }
+    .btn-delete:hover {
+        background: #c82333;
+    }
+    .message {
+        text-align: center;
+        padding: 60px 20px;
+        color: #999;
+    }
+    .message i {
+        font-size: 4em;
+        margin-bottom: 20px;
+        opacity: 0.3;
+    }
+    .message p {
+        font-size: 10px;
+    }
+    @media (max-width: 600px) {
+     #h1 {
+            font-size: 20px;
+        }
+        .task-details {
+            flex-direction: column;
+            gap: 8px;
+        }
+        .classfilter {
+            justify-content: center;
+        }
+    }

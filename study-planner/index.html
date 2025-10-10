@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner - OYEDOYIN SAMUEL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+ <div class="container">
+        <div class="header">
+            <h1 id="h1"><i class="fas fa-graduation-cap"></i> Study Planner:</h1>
+            <p id="p">Stay Ahead Of Your Class Mate</p>
+        </div>
+
+    <div class="form-section">
+        <form id="plannerTForm">
+            <div class="form-main">
+                <label for="subject"><i class="fas fa-book"></i> Subject:</label>
+                <input type="text" id="subject" placeholder="e.g., Mathematics, Biology" required>
+            </div>
+            <div class="form-main">
+                <label for="priority"><i class="fas fa-flag"></i> Priority:</label>
+                <select id="priority" required>
+                    <option value="">Select Priority</option>
+                    <option value="high">High Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="low">Low Priority</option>
+                </select>
+            </div>
+            <div class="form-main">
+                <label for="studyforDate"><i class="fas fa-calendar"></i> Study Date</label>
+                <input type="date" id="studyforDate" required>
+            </div>
+            <button type="submit" class="addbtn">
+                <i class="fas fa-plus-circle"></i> Add Study Task
+            </button>
+        </form>
+    </div>
+    <div class="classfilter">
+        <button class="filter-btn active" data-filter="all">All Tasks</button>
+        <button class="filter-btn" data-filter="pending">Pending</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+    </div>
+    <div class="tasksseection" id="tasksContainer">
+        <div class="message">
+            <i class="fas fa-clipboard-list"></i>
+            <p>Add your first task to get stay ahead of your class mate!</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+        
